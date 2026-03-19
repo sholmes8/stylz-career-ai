@@ -80,6 +80,7 @@ const handleDownload = () => {
           AI-powered resume optimization, match analysis, and skill gap feedback
           for job seekers.
         </p>
+        <p className="version">Version 1.0 • Early Access</p>
       </div>
 
       <div className="layout">
@@ -188,6 +189,17 @@ const handleDownload = () => {
                       Download
                     </button>
                   </div>
+                </div>
+
+                <div className="roadmap">
+                  <h3>In Progress...</h3>
+                  <ul>
+                    <li>AI Resume Rewriting</li>
+                    <li>Keyword Optimization</li>
+                    <li>Personalized Job Match Insights</li>
+                    <li>Downloadable Optimized Resume</li>
+                  </ul>
+                  <p className="roadmap-note">STYLZ Career AI is actively being developed. Thank you for being an early user!</p>
                 </div>
 
                 <pre>{result.optimizedResume}</pre>
