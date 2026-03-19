@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import "./App.css";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [resume, setResume] = useState("");
