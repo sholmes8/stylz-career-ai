@@ -205,6 +205,7 @@ const handleDownload = () => {
 
                 <pre>{result.optimizedResume}</pre>
               </div>
+              <Analytics />
             </>
           )}
         </div>
