@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import "./App.css";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [resume, setResume] = useState("");
@@ -74,15 +74,16 @@ const handleDownload = () => {
 };
 
   return (
-    <div className="page">
-      <div className="hero">
-        <h1>STYLZ Career AI</h1>
-        <p>
-          AI-powered resume optimization, match analysis, and skill gap feedback
-          for job seekers.
-        </p>
-        <p className="version">Version 1.0 • Early Access</p>
-      </div>
+    <>
+      <div className="page">
+        <div className="hero">
+          <h1>STYLZ Career AI</h1>
+          <p>
+            AI-powered resume optimization, match analysis, and skill gap feedback
+            for job seekers.
+          </p>
+          <p className="version">Version 1.0 • Early Access</p>
+        </div>
 
       <div className="layout">
         <div className="card">
@@ -205,12 +206,13 @@ const handleDownload = () => {
 
                 <pre>{result.optimizedResume}</pre>
               </div>
-              <Analytics />
             </>
           )}
         </div>
       </div>
-    </div>
+      </div>
+      <Analytics />
+    </>
   );
 }
 
