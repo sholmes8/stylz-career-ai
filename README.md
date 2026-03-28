@@ -1,7 +1,9 @@
-# STYLZ Career AI – Resume Optimizer  
+# 🤖 STYLZ Career AI – Resume Optimizer  
 *(Full-Stack AI Application)*
 
-> AI-powered resume optimization tool that analyzes resumes against job descriptions and generates tailored, improved versions using OpenAI
+> AI-powered resume optimization tool that analyzes resumes against job descriptions and generates tailored, improved versions using OpenAI.
+
+> 💡 **Impact:** Automates resume customization and improves alignment with job requirements, reducing manual editing time for users.
 
 ---
 
@@ -9,15 +11,18 @@
 
 STYLZ Career AI is a full-stack web application designed to help users optimize their resumes for specific job descriptions using AI.
 
-The application allows users to input their resume and a job description, then generates an improved, targeted version aligned with the role requirements.
+Users input their resume and a target job description, and the system generates an improved version aligned with role requirements and ATS keyword matching.
 
-This project demonstrates core **Software Engineering and Full-Stack Development skills**, including:
-- Frontend development  
-- Backend API design  
-- AI integration  
-- System architecture  
-- SDLC implementation  
-- Deployment and hosting  
+---
+
+## 💡 What I Built
+
+- Developed a responsive frontend using React  
+- Built a backend API using Node.js and Express  
+- Integrated OpenAI API for intelligent resume optimization  
+- Designed request/response flow between frontend and backend  
+- Implemented error handling and input validation  
+- Deployed a full-stack application using Vercel and Render  
 
 ---
 
@@ -28,7 +33,6 @@ This project demonstrates core **Software Engineering and Full-Stack Development
 - Implement backend services for processing and optimization  
 - Integrate OpenAI API for intelligent text transformation  
 - Deploy a scalable full-stack application  
-- Demonstrate real-world software engineering practices  
 
 ---
 
@@ -41,29 +45,25 @@ Many job seekers struggle to tailor their resumes to match job descriptions effe
 - Time-consuming manual resume edits  
 - Lack of clear feedback on resume quality  
 
-An automated, AI-powered system is needed to improve efficiency and optimize resumes for better job alignment.
-
 ---
 
-## 🛠 Tools & Technologies
+## 🛠 Tech Stack
 
-- React (Frontend UI)  
-- Node.js & Express (Backend API)  
-- OpenAI API (AI processing)  
-- JavaScript  
-- Vercel & Render (Deployment)  
-- Git & GitHub  
+**Frontend**
+- React (Vite)
+- JavaScript
+- CSS
 
----
+**Backend**
+- Node.js
+- Express
 
-## 📂 Project Deliverables
+**AI Integration**
+- OpenAI API
 
-- Full-stack web application  
-- Resume optimization API endpoint  
-- AI-powered text processing system  
-- User interface for input and results  
-- Deployment to production environment  
-- Documentation and system design  
+**Deployment**
+- Vercel (frontend)
+- Render (backend)
 
 ---
 
@@ -78,54 +78,14 @@ An automated, AI-powered system is needed to improve efficiency and optimize res
 
 ---
 
-## 📋 System Features
+## 📋 Key Features
 
-### Functional Features
 - Resume input and job description input  
 - AI-powered resume optimization  
+- Keyword alignment for ATS systems  
 - Match scoring and improvement suggestions  
 - Copy/download optimized resume  
-
-### Non-Functional Features
-- Responsive UI design  
-- Scalable backend architecture  
-- Error handling and validation  
-- Fast API response times  
-
----
-
-## 📊 Key Metrics
-
-- Resume match score  
-- Keyword alignment improvement  
-- Response time for optimization  
-- User interaction flow efficiency  
-
----
-
-## 🧠 Skills Demonstrated
-
-- Full-stack development  
-- API design and integration  
-- AI-powered application development  
-- Frontend and backend communication  
-- Deployment and environment configuration  
-- Problem-solving and system design  
-
----
-
-## 💻 Technical & Engineering Perspective
-
-This project demonstrates how AI-powered features can be integrated into a scalable web application.
-
-The system follows a modular architecture:
-
-- Frontend handles user interaction and data input (React)  
-- Backend processes requests and integrates AI services (Node.js / Express)  
-- External AI service (OpenAI) performs text transformation  
-- Deployment platforms ensure scalability and availability  
-
-This reflects real-world software engineering practices using SDLC principles.
+- Real-time API response  
 
 ---
 
@@ -133,15 +93,16 @@ This reflects real-world software engineering practices using SDLC principles.
 
 ### Endpoint
 
-**POST /optimize**
+```http
+POST /optimize
 
 Request:
 ```json
 {
   "resume": "User resume text",
-  "jobDescription": "Job description text"
+  "jobDescription": "Target job description"
 }
-- server/
+```
 
 Response:
 ```json
@@ -149,40 +110,46 @@ Response:
   "optimizedResume": "Improved resume content",
   "matchScore": 85
 }
+```
 
 ## 🏗️ System Architecture
-
-Frontend
-
-React-based user interface
-
-Backend
-
-Express API server
-
-AI Layer
-
-OpenAI API for processing
-
-Deployment
-
-Vercel (frontend)
-Render (backend)
+- Frontend: React-based UI for user input and results
+- Backend: Express API handling logic and AI integration
+- AI Layer: OpenAI API for text processing
+- Deployment: Vercel (frontend), Render (backend)
 
 ## Project Structure
+```text
 stylz-career-ai/
 ├── client/
 ├── server/
 ├── README.md
+```
 
 ## Application Preview
+![Home Screen](visuals/home.png)
+![Results Screen](visuals/results.png)
 
-(Add screenshot here)
+## 🧠 Skills Demonstrated
+- Full-Stack Development
+- API Design & Integration
+- AI Application Development
+- Frontend/Backend Communication
+- Deployment & Environment Configuration
+- Problem Solving & System Design
 
-## Future Improvements
-File upload for resumes (PDF/DOCX)
-Advanced scoring algorithms
-User authentication and saved resumes
-Integration with job platforms
+## 🚀 Future Improvements
+- File upload support (PDF/DOCX parsing)
+- Advanced scoring algorithms
+- User authentication and saved resumes
+- Integration with job platforms
+- Resume history tracking
+
+## 💡 Why This Project Matters
+This project demonstrates the ability to:
+- Build real-world full-stack applications
+- Integrate AI into production-ready systems
+- Design scalable API-driven architectures
+- Solve practical user problems using modern technologies
 
 ---
